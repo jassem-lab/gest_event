@@ -21,7 +21,7 @@ import Paper from '@material-ui/core/Paper';
 import Icon from '@material-ui/core/Icon';
 import Hidden from '@material-ui/core/Hidden';
 import brand from 'dan-api/dummy/brand';
-import logo from 'dan-images/logo.svg';
+
 import { TextFieldRedux, CheckboxRedux } from './ReduxFormMUI';
 import styles from './user-jss';
 import { ContentDivider } from '../Divider';
@@ -59,10 +59,10 @@ function LoginForm(props) {
   return (
     <Fragment>
       <Hidden mdUp>
-        <NavLink to="/" className={classNames(classes.brand, classes.outer)}>
+        {/* <NavLink to="/" className={classNames(classes.brand, classes.outer)}>
           <img src={logo} alt={brand.name} />
           {brand.name}
-        </NavLink>
+        </NavLink> */}
       </Hidden>
       <Paper className={classNames(classes.paperWrap, deco && classes.petal)}>
         <Hidden smDown>
